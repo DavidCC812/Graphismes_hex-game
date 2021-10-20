@@ -37,6 +37,7 @@ namespace howto_hexagonal_grid
             this.gameModesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.playerVsPlayerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.playerVsAIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Start = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@ namespace howto_hexagonal_grid
             this.gameModesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1393, 33);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -94,21 +95,35 @@ namespace howto_hexagonal_grid
             // playerVsPlayerToolStripMenuItem
             // 
             this.playerVsPlayerToolStripMenuItem.Name = "playerVsPlayerToolStripMenuItem";
-            this.playerVsPlayerToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.playerVsPlayerToolStripMenuItem.Size = new System.Drawing.Size(235, 34);
             this.playerVsPlayerToolStripMenuItem.Text = "Player vs Player";
             // 
             // playerVsAIToolStripMenuItem
             // 
             this.playerVsAIToolStripMenuItem.Name = "playerVsAIToolStripMenuItem";
-            this.playerVsAIToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.playerVsAIToolStripMenuItem.Size = new System.Drawing.Size(235, 34);
             this.playerVsAIToolStripMenuItem.Text = "Player vs AI";
+            // 
+            // Start
+            // 
+            this.Start.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Start.Location = new System.Drawing.Point(557, 247);
+            this.Start.Name = "Start";
+            this.Start.Size = new System.Drawing.Size(255, 123);
+            this.Start.TabIndex = 3;
+            this.Start.Text = "Start";
+            this.Start.UseVisualStyleBackColor = true;
+            this.Start.Click += new System.EventHandler(this.button1_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ClientSize = new System.Drawing.Size(1393, 583);
+            this.Controls.Add(this.Start);
             this.Controls.Add(this.menuStrip1);
+            this.Cursor = System.Windows.Forms.Cursors.No;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Menu";
@@ -131,5 +146,6 @@ namespace howto_hexagonal_grid
         private System.Windows.Forms.ToolStripMenuItem gameModesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem playerVsPlayerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem playerVsAIToolStripMenuItem;
+        private System.Windows.Forms.Button Start;
     }
 }
